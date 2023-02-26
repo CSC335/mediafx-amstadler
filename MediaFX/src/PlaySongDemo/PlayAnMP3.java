@@ -24,11 +24,13 @@ public class PlayAnMP3 extends Application {
   }
 
   private int songsPlayed = 0;
+  // A comment for fun :)
 
   @Override
   public void start(Stage stage) throws Exception {
     BorderPane pane = new BorderPane();
-    String path = "songfiles/Capture.mp3";
+    String path = "songfiles/DanseMacabreViolinHook.mp3";
+    // Changed song from Capture to Violin Hook
     pane.setCenter( new Label(path));
     playASong(path);
     // Put the pane in a sized Scene and show the GUI
@@ -52,7 +54,7 @@ public class PlayAnMP3 extends Application {
       
     mediaPlayer.setOnEndOfMedia(new Waiter());
     System.out.println("You may need to shut this App down");
- 
+    // This is a random comment that Alisha Stadler made!!
     }
   
   private class Waiter implements Runnable {
